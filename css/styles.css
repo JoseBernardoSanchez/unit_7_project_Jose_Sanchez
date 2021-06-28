@@ -1,21 +1,29 @@
+html{
+    background-color: #fefefa;
+}
 body {
     display: grid;
     width: 100%;
+    /* grid-template-areas: 'hd', 
+                         'sb', 
+                         'mn' */
     margin: auto;
 }
-
-
+hr{
+    color: rgb(85, 85, 85);
+    margin-bottom: 5%;
+}
 header{
-    background-color: slateblue;
+    background-color: #5D3FD3;
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    padding-top: 3%; 
+    padding-top: 2%; 
     align-items: center;
     justify-content: space-between;
 }
 nav{
-    background-color: rebeccapurple;
+    background-color: #702963;
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -79,26 +87,203 @@ width: 25px;
 
 nav #home{
     flex-basis: auto;
-    height: 40px;
+    height: 35px;
     margin-right: 10px;
     fill: ivory;
 }
 nav #bar-chart{
     flex-basis: auto;
-    height: 40px;
+    height: 35px;
     margin-right: 10px;
     fill: ivory;
 }
 nav #members{
     flex-basis: auto;
-    height: 40px;
+    height: 35px;
     margin-right: 10px;
     fill: ivory;
 }
 nav #settings{
     flex-basis: auto;
-    height: 40px;
+    height: 35px;
     fill: ivory;
 }
+/* main main-header*/
+main div.main-header{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.headline{
+    font-size:larger;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.main-header-search input{
+    height: 60px;
+    width: 202px;
+    background-color: #f3f2ef;
+    border: 1px solid rgb(117, 117, 117);
+    border-top: none;
+    border-right: none;
+}
+/* Alert */
+
+
+
+/* Social stats */
+
+div.social-container{
+    background-color: #f3f2ef;
+    border: 1px solid rgb(117, 117, 117);
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5%;
+}
+div.social-text{
+    width: 40%;
+    flex-direction: column;
+}
+p.social-media-type{
+    color: #5D3FD3;
+    font-size: large;
+    font-weight:600;
+    margin-bottom: 2%;
+}
+p.user-number{
+    font-size:40px;
+    margin-top: 2%;
+    color: rgb(85, 85, 85);
+}
+svg#facebook{
+    fill: #5D3FD3;
+    height: 70px;
+    width: 70px;
+}
+svg#instagram{
+    fill: #5D3FD3;
+    height: 70px;
+    width: 70px;
+}
+svg#twitter{
+    fill: #5D3FD3;
+    height: 70px;
+    width: 70px;
+}
+/*  Members */
+section.members{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.members-container{
+    height: 80%;
+    width: 80%;
+    text-align: center;
+}
+div.members-container{
+    margin: auto;
+}
+div.members-container a{
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+section.members hr {
+    width: 95%;
+    margin: auto;
+    color: rgb(85, 85, 85);
+    margin-bottom: 5%;
+}
+img.profile-image{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+h3{
+    margin-left: 3%;
+}
+
+/*  Message User */
+form.widget-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+input#userField.form-field{
+    border-radius: 5%;
+    width: 90%;
+    background-color: #f3f2ef;
+    border: 1px solid rgb(117, 117, 117);
+    height: 30px;
+    margin-bottom: 3%;
+}
+textarea#messageField.form-area{
+    border-radius: 5%;
+    width: 90%;
+    background-color: #f3f2ef;
+    border: 1px solid rgb(117, 117, 117);
+    height: 90px;
+    margin-bottom: 3%;
+}
+input::placeholder{
+    font-size:small;
+    font-weight:400;
+}
+textarea::placeholder{
+    font-size: medium;
+    font-weight:400;
+}
+form.widget-container button{
+    width: 90%;
+    padding: 10px 10px;
+    border-radius: 5%;
+    background-color: #5D3FD3;
+    color: ivory;
+    font-size: medium;
+    font-weight: 400;
+}
+/*  Settings */
+
+section.settings{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+}
+select#timezone{
+    border-radius: 5%;
+    width: 90%;
+    background-color: #f3f2ef;
+    border: 1px solid rgb(117, 117, 117);
+    height: 30px;
+    margin-bottom: 3%;
+}
+div.settings-button{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button#save{
+    padding: 10px 10px;
+    width: 40%;
+    background-color: #5D3FD3;
+    
+}
+button#cancel{
+    padding: 10px 10px;
+    width: 40%;
+    background-color: rgb(117, 117, 117);
+}
+
 /*  size changes */
 
