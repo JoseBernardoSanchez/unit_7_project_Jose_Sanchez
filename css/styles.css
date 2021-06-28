@@ -14,6 +14,14 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+nav{
+    background-color: rebeccapurple;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 /* header size changes */
 
 header h1{
@@ -67,3 +75,30 @@ width: 25px;
     position: absolute;
     top: -25%; right: 0; bottom: 0; left: 75%;
 }
+/* Nav size changes */
+
+nav #home{
+    flex-basis: auto;
+    height: 40px;
+    margin-right: 10px;
+    fill: ivory;
+}
+nav #bar-chart{
+    flex-basis: auto;
+    height: 40px;
+    margin-right: 10px;
+    fill: ivory;
+}
+nav #members{
+    flex-basis: auto;
+    height: 40px;
+    margin-right: 10px;
+    fill: ivory;
+}
+nav #settings{
+    flex-basis: auto;
+    height: 40px;
+    fill: ivory;
+}
+/*  size changes */
+
