@@ -1,14 +1,13 @@
 html{
     background-color: #fefefa;
 }
+/* grid layout */
 body {
     display: grid;
     width: 100%;
-    /* grid-template-areas: 'hd', 
-                         'sb', 
-                         'mn' */
     margin: auto;
 }
+
 hr{
     color: rgb(85, 85, 85);
     margin-bottom: 5%;
@@ -130,8 +129,26 @@ main div.main-header{
     border-right: none;
 }
 /* Alert */
+#alert{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #5D3FD3;
+    width: 90%;
+    color: ivory;
+    padding: 10px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
 
-
+}
+#alert button{
+    background-color: #5D3FD3;
+    border-style: none;
+    color: ivory;
+    font-size: x-large;
+}
 
 /* Traffic */
 
@@ -215,7 +232,7 @@ div.members-container{
     margin: auto;
 }
 div.members-container a{
-    color: rgb(85, 85, 85);
+    color: #5D3FD3;
     text-decoration: none;
 }
 section.members hr {
@@ -239,7 +256,7 @@ form.widget-container{
     justify-content: space-evenly;
 }
 input#userField.form-field{
-    border-radius: 5%;
+    border-radius: 10px;
     width: 90%;
     background-color: #f3f2ef;
     border: 1px solid rgb(117, 117, 117);
@@ -247,7 +264,7 @@ input#userField.form-field{
     margin-bottom: 3%;
 }
 textarea#messageField.form-area{
-    border-radius: 5%;
+    border-radius: 10px;
     width: 90%;
     background-color: #f3f2ef;
     border: 1px solid rgb(117, 117, 117);
@@ -265,7 +282,7 @@ textarea::placeholder{
 form.widget-container button{
     width: 90%;
     padding: 10px 10px;
-    border-radius: 5%;
+    border-radius: 10px;
     background-color: #5D3FD3;
     color: ivory;
     font-size: medium;
@@ -280,7 +297,7 @@ section.settings{
     justify-content: space-between;
 }
 select#timezone{
-    border-radius: 5%;
+    border-radius: 10px;
     width: 90%;
     background-color: #f3f2ef;
     border: 1px solid rgb(117, 117, 117);
@@ -297,11 +314,15 @@ button#save{
     padding: 10px 10px;
     width: 40%;
     background-color: #5D3FD3;
+    border-radius: 10px;
+    color: ivory;
 }
 button#cancel{
     padding: 10px 10px;
     width: 40%;
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(85, 85, 85);
+    border-radius: 10px;
+    color: ivory;
 }
 /*  make sliding setting buttons */
 
@@ -315,10 +336,8 @@ label.switch-light, label.switch-candy{
     margin-bottom: 3%;
 }
 label.switch-light a, label.switch-candy a{
-    border-radius: 50%;
-    height: 32px ;
-    width: 40px;
-    margin: 0%;
+    border-radius: 20px;
+    width: 50%;
 }
 strong{
     width: 50%;
@@ -327,5 +346,30 @@ strong{
 label.switch-light span, label.switch-candy span{
     width: 25%
 }
-/*  size changes */
+/*  bell animation */
 
+ #bell:hover{
+    transform: scale(1.4);
+  }
+
+/*  size changes */
+@media (min-width: 768px) {
+    header {
+        grid-area: hd;
+    }
+
+    nav {
+        grid-area: sb;
+    }
+
+    main {
+        grid-area: mn;
+    } 
+    body {
+        grid-template-columns: 50px auto;
+        grid-template-rows: 50px auto;
+        grid-template-areas: 
+            'hd hd'
+            'sb mn';
+    }
+}
