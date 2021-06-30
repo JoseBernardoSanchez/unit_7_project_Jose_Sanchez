@@ -410,10 +410,103 @@ label.switch-light span, label.switch-candy span{
         margin: auto;
         margin-top: 5px;
     }
+    /*traffic*/
+    div.traffic-header{
+        display: flex;
+    }
+    div.traffic-header h3{
+        width: 90%;
+    }
+    ul.traffic-nav{
+        width: 300px;
+    }
+    li.traffic-nav-link{
+        font-size: small;
+    }
+    /*other charts*/
 
+    section.daily{
+        width: 45%;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+    }
+    #daily-chart{
+        margin-top: 25%;
+    }
 
-
-
+    section.Mobile-users{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        margin: auto;
+    }
+    .widget-container-half hr{
+        height: 400px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    hr{
+        margin-top: 2px;
+        margin-bottom: 0%;
+    }
+    .widget-container-half{
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        margin:auto;
+        justify-content: center;
+    }
+    /* social stats*/
+    section.social-stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    div.social-container{
+        margin: 5px;
+        width: 34%;
+    }
+    p.user-number{
+        font-size:xx-large;
+    }
+    /*members*/
+    div.members-container{
+        margin: 1%;
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+    section.members hr{
+        margin: 2%;
+    }
+    div.members-text{
+        width: 70%;
+        margin-left: 5px;
+        text-align: start;
+    }
+    .member-time{
+        margin: auto;
+        text-align: center;
+        height: 30px;
+    }
+    div.members-activity{
+        width: 70%;
+        margin-left: 5px;
+        text-align: start;
+    }
+    /*switches*/
+    label.switch-light.switch-candy{
+        width: 300px;
+        margin-right: auto;
+        
+    }
+    label.switch-light.switch-candy strong{
+        width: 140px;
+    }
 
 
 
