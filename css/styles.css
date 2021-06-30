@@ -7,7 +7,9 @@ body {
     width: 100%;
     margin: auto;
 }
-
+h3{
+    margin-top: 5px;
+}
 hr{
     color: rgb(85, 85, 85);
     margin-bottom: 5%;
@@ -17,7 +19,6 @@ header{
     max-width: 100%;
     display: flex;
     flex-direction: row;
-    padding-top: 2%; 
     align-items: center;
     justify-content: space-between;
 }
@@ -360,7 +361,10 @@ label.switch-light span, label.switch-candy span{
 
     nav {
         grid-area: sb;
+        flex-direction: column;
+        justify-content: unset;
     }
+    
 
     main {
         grid-area: mn;
@@ -370,6 +374,52 @@ label.switch-light span, label.switch-candy span{
         grid-template-rows: 50px auto;
         grid-template-areas: 
             'hd hd'
-            'sb mn';
+            'sb mn';}
+    /*header */
+
+
+    /* nav*/
+    nav #home{
+        margin-left: 5px ;
+        margin-right: 0px;
     }
+    nav #bar-chart{
+        margin-left: 5px ;
+        margin-right: 0px;
+    }
+    nav #members{
+        margin-left: 5px ;
+        margin-right: 0px;
+    }
+    nav #settings{
+        margin-left: 5px ;
+        margin-right: 0px;
+    }
+    /* main main-header*/
+    .main-header-search input{
+        height: 60px;
+        width: 575px;
+    }
+    /* alert */
+    #alert{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
