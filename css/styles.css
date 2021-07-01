@@ -376,7 +376,13 @@ label.switch-light span, label.switch-candy span{
             'hd hd'
             'sb mn';}
     /*header */
-
+    h1{
+        margin-right: 475px;
+    }
+    /*alert*/
+    #alert.alert a{
+        margin-right: auto;
+    }
 
     /* nav*/
     nav #home{
@@ -473,6 +479,20 @@ label.switch-light span, label.switch-candy span{
         font-size:xx-large;
     }
     /*members*/
+    .right-arrow{
+        height: 15px;
+        margin: auto;
+    }
+    .arrow {
+        border: solid #5D3FD3;
+        border-width: 0 3px 3px 0;
+        display: flex;
+        padding: 3px;
+      }
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
     div.members-container{
         margin: 1%;
         width: 700px;
@@ -508,11 +528,105 @@ label.switch-light span, label.switch-candy span{
         width: 140px;
     }
 
+}
 
+@media (min-width: 1024px) {
 
+    /*header */
+    h1{
+        margin-right: 725px;
+    }
+    /* main main-header*/
+    .main-header-search input{
+        height: 60px;
+        width: 800px;
+    }
 
+    /*traffic*/
+    div.traffic-header{
+        display: flex;
+    }
+    div.traffic-header h3{
+        width: 67%;
+    }
+    ul.traffic-nav{
+        width: 300px;
+    }
+    li.traffic-nav-link{
+        font-size: large;
+    }
+    /*other charts*/
+    #daily-chart{
+        margin-top: auto;
+        transform:scale(1);
+    }
+    section.daily{
+        width: 500px;
+    }
+    section.Mobile-users{
+        width: 350px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        margin: 0%;
+    }
+    .widget-container-half hr{
+        height: 400px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-right: 30px;
+        margin-left: 30px;
+    } 
+    hr{
 
+        margin-top: 2px;
+        margin-bottom: 0%;
+    }
 
+    /*members*/
+    section.members{
+        width: 45%;
+        margin:0%
 
+    }
 
+    div.members-text{
+        width: 200px;
+    }
+    div.members-container{
+        margin: 1%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .allmembers{
+        display: flex;
+        flex-direction: row;
+    }
+    hr.memberdivide{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    /*message-settings*/
+
+    .message-settings{
+        display: flex;
+        flex-direction: row;
+    }
+    section.message{
+        width: 45%;
+        margin:0%
+
+    }
+    section.settings{
+        width: 45%;
+        margin:0%
+
+    }
+    
 }
